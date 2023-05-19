@@ -1,9 +1,9 @@
 from datetime import datetime
 from math import floor
 from pathlib import Path
-from re import search
 from string import ascii_lowercase, ascii_uppercase
 from typing import Dict, List, Set
+
 from dateparser import parse as date_parse
 from RPA.Browser.Selenium import ElementNotFound
 
