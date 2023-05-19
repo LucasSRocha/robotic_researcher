@@ -7,10 +7,10 @@ from utils.string_utils import clean_string_with_extra_spaces
 
 
 def main() -> None:
-    parser = ArgumentParser(description="Retrieve information about scientists from Wikipedia.")
+    parser = ArgumentParser(description="Retrieve information about people from Wikipedia.")
     parser.add_argument(
-        "scientists",
-        help="The scientists to search for separated by comma ',' i.e. 'Albert Einstin, Isaac Newton, Marie Curie'.",
+        "people",
+        help="People you want to search for separated by comma ',' i.e. 'Albert Einstin, Isaac Newton, Marie Curie'.",
     )
     parser.add_argument(
         "-H",
@@ -39,8 +39,8 @@ def main() -> None:
         bot_name="Wilson",
         headless=args.headless,
     )
-    scientists = {clean_string_with_extra_spaces(i.strip()) for i in args.scientists.split(",")}
-    robot.run(scientists=scientists, output_file=args.output_path, silent=args.silent, output_format=args.format)
+    people = {clean_string_with_extra_spaces(i.strip()) for i in args.people.split(",")}
+    robot.run(scientists=people, output_file=args.output_path, silent=args.silent, output_format=args.format)
 
 
 if __name__ == "__main__":  # pragma: no cover

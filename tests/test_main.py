@@ -8,7 +8,7 @@ def test_main_with_silent_and_headless_options(mocker):
     mock_args.return_value = mocker.MagicMock(
         headless=True,
         silent=True,
-        scientists="Albert Einstein",
+        people="Albert Einstein",
         output_path=None,
         format="txt",
     )
@@ -25,7 +25,7 @@ def test_main_with_output_path(mocker):
     mock_args.return_value = mocker.MagicMock(
         headless=False,
         silent=False,
-        scientists="Albert Einstein,   Albert   Einstein, Fake  Doctorine   ",
+        people="Albert Einstein,   Albert   Einstein, Fake  Doctorine   ",
         output_path="/tmp/output.txt",
         format="txt",
     )

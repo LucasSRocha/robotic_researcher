@@ -1,6 +1,9 @@
 # Robotic Researcher
-Welcome Quandri's Hiring team to your technical test review. 
+Hello Quandri Hiring team, welcome to your technical test review. 
 Hope you have a good experience reviewing this test (:
+
+This project is a script that retrieves information about a person, or people, from Wikipedia. 
+This can be used to gather data for research, education, or any other purpose where such information might be useful.
 
 ## How to use
 ### Requirements
@@ -21,16 +24,16 @@ $ source .venv/bin/activate
 $ make dependencies 
 ```
 
-### Runnin the script
+### Running the script
 To get the help on how to properly use the script you can use `--help`
 ```shell
 $ python main.py --help
-usage: main.py [-h] [-H] [-S] [-o OUTPUT_PATH] [-f {txt,csv,json}] scientists
+usage: main.py [-h] [-H] [-S] [-o OUTPUT_PATH] [-f {txt,csv,json}] people
 
-Retrieve information about scientists from Wikipedia.
+Retrieve information about people from Wikipedia.
 
 positional arguments:
-  scientists            The scientists to search for separated by comma ',' i.e. 'Albert Einstin, Isaac Newton, Marie Curie'.
+  people                People you want to search for separated by comma ',' i.e. 'Albert Einstin, Isaac Newton, Marie Curie'.
 
 options:
   -h, --help            show this help message and exit
@@ -78,12 +81,3 @@ test-coverage-unit   Run unit tests with coverage output
 test-debug           Run tests with active pdb
 test-unit            Run unit tests
 ```
-
-
-## Thought process/ Ideas
-
-
-## Submission
-When you've completed the task, please email your project in a zip folder to 
-jamieson@quandri.io with the subject line: `Robotic Researcher - Quandri Backend Python 
-Interview`
